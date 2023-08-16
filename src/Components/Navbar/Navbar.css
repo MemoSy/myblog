@@ -1,6 +1,6 @@
 .nav {
   height: 50px;
-  width: 100%;
+  width: 96%;
   background-color: #4d4d4d;
   position: relative;
   border-radius:25px
@@ -22,9 +22,10 @@
 }
 
 .nav > .nav-links {
-  display: inline;
+  display: flex;
   float: right;
   font-size: 18px;
+  gap: 26px;
 }
 
 .nav > .nav-links > a {
