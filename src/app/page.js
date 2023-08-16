@@ -15,7 +15,7 @@ export default function Home() {
           <button className='p-2 rounded-md bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800' > See Our Works </button>
         </div>
         <div className="">
-          <img src={Hero} alt="" height={500} width={500} className="imageAnim" />
+          <img src="https://img.freepik.com/free-photo/businessman-with-thumb-up_1368-8838.jpg?w=826&t=st=1692199410~exp=1692200010~hmac=f65528e167cb2d289dd86108d82a1778aada7aa09a97fc8ee1525703ace0d0c4" style={{borderRadius:"25px"}}  alt="" height={500} width={500} className="imageAnim" />
         </div>
       </div>
     </>
