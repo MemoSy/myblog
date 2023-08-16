@@ -22,7 +22,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const session = useSession()
   return (
-    <Disclosure as="nav" className="bg-gray-800 h-[200px]">
+    <Disclosure as="nav" className="h-[200px]">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-[1500px] px-2 sm:px-6 lg:px-8">
@@ -39,9 +39,9 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div style={{backgroundColor:"red"}} className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <h1>Mahmut.Tech</h1>  
+                  <h1 >Mahmut.Tech</h1>  
                 </div>
                 
               </div>
