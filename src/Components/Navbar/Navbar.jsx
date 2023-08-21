@@ -23,16 +23,18 @@ function classNames(...classes) {
 export default function Navbar() {
   const session = useSession()
   return (
-    <div>
-        <DarkModeToggle />
-        {navigation.map((item) => (
-          <li
-            class="center"
-            aria-current={item.current ? 'page' : undefined}
-          >
-            <Link href={item.href}> {item.name} </Link>
-          </li>
-        ))}
+    <div className='flex justify-center mt-2'>
+        <ul className='nav-links'>
+          <DarkModeToggle />
+          {navigation.map((item) => (
+            <li
+              class="center"
+              aria-current={item.current ? 'page' : undefined}
+            >
+              <Link href={item.href}> {item.name} </Link>
+            </li>
+          ))}
+        </ul>
     </div>
   )
 }
