@@ -28,6 +28,7 @@ export default function Navbar() {
           <DarkModeToggle />
           {navigation.map((item) => (
             <li
+              key="0"
               class="center"
               aria-current={item.current ? 'page' : undefined}
             >
