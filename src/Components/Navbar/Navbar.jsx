@@ -24,7 +24,7 @@ export default function Navbar() {
   const session = useSession()
   return (
     <div className='flex justify-center mt-2'>
-        <ul className='nav-links w-[100%] lg:w-[50%]'>
+        <ul className='nav-links'>
           <DarkModeToggle />
           {navigation.map((item) => (
             <li
@@ -32,7 +32,7 @@ export default function Navbar() {
               class="center"
               aria-current={item.current ? 'page' : undefined}
             >
-              <Link className='!text-[12px] lg:!text-[20px]' href={item.href}> {item.name} </Link>
+              <Link href={item.href}> {item.name} </Link>
             </li>
           ))}
         </ul>

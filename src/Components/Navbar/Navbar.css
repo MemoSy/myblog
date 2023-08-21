@@ -1,8 +1,9 @@
 .nav-links{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: #fff;
+  width: 30%;
   padding: 20px 15px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -55,4 +56,14 @@
 .nav-links li.forward a:hover:before{
   transform: scaleX(1);
   transform-origin: left;
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav-links {
+    width: 100%;
+  }
+  .nav-links li a{
+    font-size: 12px;
+
+  }
 }
